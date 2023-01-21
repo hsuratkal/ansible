@@ -1,6 +1,6 @@
 - name: Demo On Copy   
   hosts: all 
-  become: yes
+  become_user: root
   tasks: 
   - name: Upgrade all packages
     ansible.builtin.yum:
