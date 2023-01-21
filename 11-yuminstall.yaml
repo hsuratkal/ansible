@@ -1,4 +1,7 @@
-- name: Upgrade all packages
-  yum:
-    name: '*'
-    state: latest
+- name: Demo On Copy   
+  hosts: all 
+  tasks: 
+  - name: Upgrade all packages
+    ansible.builtin.yum:
+      name: '*'
+      state: latest
