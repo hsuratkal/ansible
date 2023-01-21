@@ -1,0 +1,5 @@
+- name: Upgrade all packages
+ hosts: dev
+  ansible.builtin.yum:
+    name: '*'
+    state: latest
